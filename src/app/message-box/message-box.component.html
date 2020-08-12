@@ -1,0 +1,12 @@
+<h2>Your messages to {{recipient.name}}</h2>
+<div class="container" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+  <table width="90%" align="center">
+    <tr *ngFor="let message of messages; let odd = odd; let even = even"
+      [class.left]="odd"
+      [class.right]="even">
+      <td>
+        {{message.msg}}
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,5 @@
+<p>Type your text here:</p>
+<div class="inputbox">
+  <input #box (keyup.enter)="onEnter(box.value)" class="textinput">
+  <p>Last message: {{value}}</p>
+</div>
